@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Estudiantes</h2>
+    <form action="/submit" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required><br>
+        <input type="text" name="apellido_paterno" placeholder="Apellido Paterno" required><br>
+        <input type="text" name="apellido_materno" placeholder="Apellido Materno" required><br>
+        <input type="text" name="carrera" placeholder="Carrera" required><br>
+        <input type="email" name="correo_electronico" placeholder="Correo Electrónico" required><br>
+        <input type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" required><br>
+        <button type

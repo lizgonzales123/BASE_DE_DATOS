@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Aulas</h2>
+    <form action="Datos_bd.php" method="POST">
+        <label for="Numero_de_aula"></label>
+        <input type="number" name="Numero_de_aula" placeholder="Número de aulas" id="Numero_de_aula" required><br>
+        <label for="Capacidad"></label>
+        <input type="number" name="Capacidad" placeholder="Capacidad" required id="Capacidad"><br>
+        <label for="Ubicacion"></label>
+        <input type="text" name="Ubicacion" placeholder="Ubicación" required id="Ubicacion"><br>
+        <label for="Equipamiento"></label>
+        <input type="text" name="Equipamiento" placeholder="Equipamiento" required id="Equipamiento"><br>
+        <button type="submit" class="btn" value="Registro">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
